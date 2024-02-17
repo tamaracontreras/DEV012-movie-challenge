@@ -1,0 +1,69 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: content-box;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: whitesmoke;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+}
+.logoCompleto {
+    display: flex; /* Agregamos flex a este contenedor también */
+    align-items: center; /* Para alinear verticalmente los elementos */
+    margin-top: 100px;
+}
+h3 {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+svg {
+    font-size: 100px;
+    margin-right: 10px;
+}
+section{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.search{
+    display: flex; /* Agregamos flex a este contenedor también */
+    align-items: center; /* Para alinear verticalmente los elementos */
+    margin-top: 100px;
+    }
+#searchInput{
+    width: 500px;
+    height: 30px;
+    padding: 5px;
+    border-radius: 20px;
+    border :1px solid gray;
+    box-shadow: 1px 5px 14px 2px rgba(94, 93, 93, 0.44);
+}
+button{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 50px;
+    height: 30px;
+    padding: 5px;
+    border-radius: 20px;
+    margin-left:5px;
+    border :1px solid gray;
+    background-color: whitesmoke;
+    box-shadow: 1px 5px 14px 2px rgba(94, 93, 93, 0.44);
+    
+    
+}
+.fa-magnifying-glass{
+    font-size: 30px;
+    
+  
+    
+}
+
