@@ -1,85 +1,180 @@
 * {
-    margin: 0px;
-    padding: 0px;
-    box-sizing: content-box;
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: whitesmoke;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: content-box;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: whitesmoke;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 header {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 .logoCompleto {
-    display: flex; /* Agregamos flex a este contenedor también */
-    align-items: center; /* Para alinear verticalmente los elementos */
-    margin-top: 100px;
+  display: flex; /* Agregamos flex a este contenedor también */
+  align-items: center; /* Para alinear verticalmente los elementos */
+  margin-top: 100px;
 }
 h3 {
-    font-size: 40px;
-    font-weight: bold;
+  font-size: 40px;
+  font-weight: bold;
 }
 
-svg {
-    font-size: 100px;
-    margin-right: 10px;
+.fa-eye {
+  font-size: 100px;
+  margin-right: 10px;
 }
-section{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
+nav {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
-.search{
-    display: flex; /* Agregamos flex a este contenedor también */
-    align-items: center; /* Para alinear verticalmente los elementos */
-    margin-top: 100px;
-    }
-#searchInput{
+.search {
+  display: flex; /* Agregamos flex a este contenedor también */
+  align-items: center; /* Para alinear verticalmente los elementos */
+  margin-top: 100px;
+}
+#searchInput {
+  width: 400px;
+  height: 30px;
+  padding: 5px;
+  border-radius: 20px;
+  border: 1px solid whitesmoke;
+  box-shadow: 5px 5px 14px #c9c9c9;
+  background-color: whitesmoke;
+}
 
-    width: 400px;
-    height: 30px;
-    padding: 5px;
-    border-radius: 20px;
-    border :1px solid whitesmoke;
-    box-shadow:  5px 5px 14px #c9c9c9;
-    background-color: whitesmoke;
+::placeholder {
+  color: gray; /* Color del placeholder */
+  font-style: italic; /* Estilo de fuente del placeholder */
+  padding-left: 15px;
+
+  /* Otros estilos según sea necesario */
 }
 input:focus {
-    outline: none;
+  outline: none;
 }
 
-button{
+button {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  width: 50px;
+  height: 30px;
+  padding: 5px;
+  border-radius: 20px;
+  margin-left: 5px;
+  border: none;
+  background-color: whitesmoke;
+
+  box-shadow: 5px 5px 14px #c9c9c9;
+
+  transition: transform 0.2s ease-in-out;
+  cursor: pointer;
+}
+button:active {
+  transform: translateY(3px);
+}
+
+button:hover {
+  border: 1px solid #ffffff;
+}
+
+.fa-magnifying-glass {
+  font-size: 20px;
+}
+
+footer {
+  display: flex; /* Establece el contenedor principal como un contenedor flex */
+  justify-content: center; /* Centra el contenido horizontalmente */
+  align-items: center; /* Centra el contenido verticalmente */
+  width: 100%;
+  margin-top: 250px; /* Empuja el footer hacia la parte inferior */
+}
+
+.contacto {
+  display: flex; /* Establece el div interno como un contenedor flex */
+  justify-content: center; /* Centra los íconos horizontalmente dentro del div */
+  font-size: 30px;
+  gap: 20px;
+  padding: 5px;
+  height: max-content;
+  width: max-content;
+}
+
+a {
+  color: black;
+}
+#root {
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.informacion {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  background-color: rgba(224, 218, 218, 0.92);
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 430px;
+  height: 250px;
+  margin-top: 50px;
+  gap: 10px;
+}
+.fondo{
     display: flex;
     align-items: center;
-    flex-direction: column;
-    width: 50px;
-    height: 30px;
-    padding: 5px;
-    border-radius: 20px;
-    margin-left:5px;
-    border :1px solid gray;
+    flex-direction: row;
     background-color: whitesmoke;
-  
-    box-shadow:  5px 5px 14px #c9c9c9;
-    font-size: 15px;
-    transition: transform 0.2s ease-in-out;
-    border: none;
-  }
-  button:active {
-    transform: translateY(3px);}
-  
-  button:hover {
-    border: 1px solid #ffffff ;
-    }
-    
+    border-radius: 10px;
+    padding: 20px;
+    width: 400px;
+    height: 200px;
+    gap: 20px;
+}
+.imgcont {
+  width: 55%;
+  height: 100%; /* Asegura que la imagen ocupe todo el ancho de la tarjeta */
+ /* Radio de borde para dar forma a la imagen */
+; /* Evita que la imagen se salga del contenedor */
+  border: 1px solid gray;
+  border-radius: 10px;
+ 
+ 
+}
+img { object-fit: cover; 
+width: 100%;
+height: 100%;
+border-radius: 10px;}
 
-.fa-magnifying-glass{
-    font-size: 30px;
-    
+.contCard {
+   /* Espacio entre la imagen y el contenido */
+  background-color: whitesmoke;
+  height: 100%;
+  width: 50%;
   
-    
 }
 
+.contenedorDesc {
+
+  width: 100%;
+  height: 100%;
+  /* Espacio entre el contenido y el párrafo de descripción */
+}
+
+.descripcionDetail {
+  color: #333; /* Color del texto de la descripción */
+  font-size: 14px; /* Tamaño de fuente del texto de la descripción */
+  line-height: 1.5; /* Altura de línea para un espaciado adecuado */
+}
