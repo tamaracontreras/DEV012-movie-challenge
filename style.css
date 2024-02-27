@@ -1,0 +1,231 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+ 
+}
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: whitesmoke;
+}
+/* encabezado */
+header {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 50px;
+}
+/* icono + nombre */
+.logoCompleto {
+  display: flex; /* Agregamos flex a este contenedor también */
+  align-items: center; /* Para alinear verticalmente los elementos */
+  
+}
+/* nombre */
+h3 {
+  font-size: 40px;
+  font-weight: bold;
+}
+/* icono logo */
+
+.fa-eye {
+  font-size: 100px;
+  margin-right: 10px;
+}
+/* nav(input) */
+nav {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+}
+/* envuelve el input y el boton de nav */
+.search {
+  display: flex; /* Agregamos flex a este contenedor también */
+  align-items: center; /* Para alinear verticalmente los elementos */
+  margin-top: 50px;
+}
+/* input */
+#searchInput {
+  width: 400px;
+  height: 30px;
+  padding: 5px;
+  border-radius: 20px;
+  border: 1px solid whitesmoke;
+  box-shadow: 5px 5px 14px #c9c9c9;
+  background-color: whitesmoke;
+  margin-left: 5px;
+}
+/* placeholder del input */
+::placeholder {
+  color: gray; 
+  font-style: italic; 
+  padding-left: 15px;
+
+
+}
+/* elimina la llinea que esta por defecto hay hacer click en el input */
+input:focus {
+  outline: none;
+}
+/* estilo del boton */
+button {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  width: 50px;
+  height: 30px;
+  padding: 5px;
+  border-radius: 20px;
+  margin-left: 5px;
+  border: none;
+  background-color: whitesmoke;
+  box-shadow: 5px 5px 14px #c9c9c9;
+  transition: transform 0.2s ease-in-out;
+  cursor: pointer;
+}
+/* cuando se está presionando, se moverá hacia abajo 3 píxeles. */
+button:active {
+  transform: translateY(3px);
+}
+/*cuando se pase sobre el boton el borde cambiara de color */
+
+button:hover {
+  border: 3px solid #ffffff;
+}
+ /* cambio de tamaño del icono de font awesome */
+.fa-magnifying-glass {
+  font-size: 20px;
+}
+
+footer {
+  display: flex; 
+  justify-content: center; /*horizontalmente */
+  align-items: center; /* verticalmente */
+  width: 100%;
+  margin-top: 30px; /* Empuja el footer hacia la parte inferior */
+}
+/* div interno de footer */
+.contacto {
+  display: flex; 
+  justify-content: center; /*horizontalmente  */
+  font-size: 30px;
+  gap: 20px;
+  padding: 5px;
+  height: max-content;
+  width: max-content;
+  margin-bottom: 20px;
+}
+/* color iconos rr.ss */
+a {
+  color: black;
+}
+/* contenedor principal de la aplicación */
+#root {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+/* div contenedor de la card */
+.informacion {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  background-color: rgba(224, 218, 218, 0.92);
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 500px;
+  height: 350px;
+  margin-top: 50px;
+  gap: 20px;
+}
+/* div interior de la card */
+.fondo{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    padding: 20px;
+    width: 500px;
+    height: 300px;
+    gap: 10px;
+}
+/* contenedor de imagen */
+.imgcont {
+  width: 60%;
+  height: 100%; /* Asegura que la imagen ocupe todo el ancho de la tarjeta */
+  border: 1px solid gray;
+  border-radius: 10px;
+  object-fit: cover; 
+}
+
+img { 
+
+width: 100%;
+height: 100%;
+border-radius: 10px;}
+
+.contCard {
+   /* Espacio entre la imagen y el contenido */
+ 
+  height: 50%;
+  width: 50%;
+  text-align: center;
+ 
+  
+}
+
+ /* //responsive */
+ @media only screen and (max-width: 380px) { 
+  .logoCompleto {
+  flex-direction: column;
+    gap:40px
+   }
+  
+ 
+
+   #searchInput {
+    width: 200px;}
+
+   .informacion{
+      margin-top: 0px;
+  }
+  
+ }
+@media only screen and (max-width: 600px) {
+  .logoCompleto {
+   flex-direction: column;
+  gap:40px
+ } 
+ h3{display: none;}
+
+ .informacion{
+  flex-direction: column;
+  width: 332px;
+  height: 445px;
+ }
+ .fondo{
+  flex-direction: column;
+  width: 300px;
+  height: 410px;
+  justify-content: center ;
+ }
+ .imgcont{
+  width: 100%;
+  height: 80%;
+ }
+}
+
+@media only screen and (min-width: 1025px) { 
+  h3{display: inline;}
+} 
+
+
+
