@@ -12,7 +12,7 @@ export function searchMovies() {
 	// Realizar la solicitud a la API de OMDB
 	const apiKey = 'ab8939f0';
 	fetch(
-		`http://www.omdbapi.com/?apikey=${apiKey}&s=${encodeURIComponent(
+		`https://www.omdbapi.com/?apikey=${apiKey}&s=${encodeURIComponent(
 			searchTerm
 		)}&y=&page=1&type=movie&plot=short&r=json`
 	)
