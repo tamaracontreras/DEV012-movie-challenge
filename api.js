@@ -1,4 +1,4 @@
-import { card } from "/components/card.js";
+import { card } from "./components/card.js";
 
 export function searchMovies() {
     // Obtener el valor del input
