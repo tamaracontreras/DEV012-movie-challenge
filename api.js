@@ -26,7 +26,7 @@ export function searchMovies() {
             const imdbID = primerResultado.imdbID;
 
             // Realizar una segunda solicitud para obtener los detalles de la película
-            return fetch(`http://www.omdbapi.com/?apikey=${apiKey}&i=${imdbID}&r=json`);
+            return fetch(`https://www.omdbapi.com/?apikey=${apiKey}&i=${imdbID}&r=json`);
         } else {
             console.log("No se encontraron películas.");
             throw new Error("No se encontraron películas.");
