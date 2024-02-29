@@ -126,7 +126,7 @@ a {
 }
 /* contenedor principal de la aplicación */
 #root {
-  margin-top: 30px;
+  margin-top: 10px;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -185,20 +185,27 @@ border-radius: 10px;}
  /* //responsive */
  @media only screen and (max-width: 380px) { 
   .logoCompleto {
-
-    flex-direction: column;
+  flex-direction: column;
     gap:40px
-   } 
-   h3{display: none;}
+   }
+  
+ 
+
    #searchInput {
     width: 200px;}
+
+   .informacion{
+      margin-top: 0px;
+  }
+  
  }
 @media only screen and (max-width: 600px) {
   .logoCompleto {
-
-  flex-direction: column;
+   flex-direction: column;
   gap:40px
  } 
+ h3{display: none;}
+
  .informacion{
   flex-direction: column;
   width: 332px;
@@ -216,9 +223,9 @@ border-radius: 10px;}
  }
 }
 
-/* @media only screen and (min-width: 1025px) { */
-  /* Estilos para pantallas grandes aquí 
-} */ 
+@media only screen and (min-width: 1025px) { 
+  h3{display: inline;}
+} 
 
 
 
