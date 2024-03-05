@@ -12,7 +12,7 @@ export function searchMovies() {
 	// Realizar la solicitud a la API de OMDB
 	const apiKey = 'ab8939f0';
 	fetch(
-		`http://www.omdbapi.com/?apikey=${apiKey}&s=${encodeURIComponent(
+		`https://www.omdbapi.com/?apikey=${apiKey}&s=${encodeURIComponent(
 			searchTerm
 		)}&y=&page=1&type=movie&r=json`
 	)
@@ -33,7 +33,7 @@ export function searchMovies() {
 
 				// Realizar una segunda solicitud para obtener los detalles de la película
 				return fetch(
-					`http://www.omdbapi.com/?apikey=${apiKey}&i=${imdbID}&r=json`
+					`https://www.omdbapi.com/?apikey=${apiKey}&i=${imdbID}&r=json`
 				);
 			} else {
 				console.log('No se encontraron películas.');
