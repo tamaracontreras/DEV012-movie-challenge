@@ -53,6 +53,7 @@ nav {
   width: 400px;
   height: 30px;
   padding: 5px;
+  padding-left: 15px;
   border-radius: 20px;
   border: 1px solid whitesmoke;
   box-shadow: 5px 5px 14px #c9c9c9;

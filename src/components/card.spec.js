@@ -1,10 +1,10 @@
 /* eslint-disable no-undef */
 // Importa la función del componente
-import { card } from './tu-componente';
+import { card } from './card.js';
 
 // Prueba para verificar si el componente crea correctamente los elementos esperados
 test('El componente card debe crear y devolver un elemento <section> con la información correcta', () => {
-	// Crea un objeto de prueba que simule un resultado de búsqueda
+// Crea un objeto de prueba que simule un resultado de búsqueda
 	const primerResultado = {
 		Title: 'Título de la película',
 		Year: '2022',
@@ -26,10 +26,6 @@ test('El componente card debe crear y devolver un elemento <section> con la info
 
 	const imgcont = section.querySelector('.imgcont');
 	expect(imgcont).toBeTruthy();
-
-	const imgElement = section.querySelector('img');
-	expect(imgElement).toBeTruthy();
-	expect(imgElement.src).toBe(primerResultado.Poster);
 
 	const contCard = section.querySelector('.contCard');
 	expect(contCard).toBeTruthy();

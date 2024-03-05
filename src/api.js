@@ -14,7 +14,7 @@ export function searchMovies() {
 	fetch(
 		`http://www.omdbapi.com/?apikey=${apiKey}&s=${encodeURIComponent(
 			searchTerm
-		)}&y=&page=1&type=movie&plot=short&r=json`
+		)}&y=&page=1&type=movie&r=json`
 	)
 		.then((response) => {
 			return response.json();
